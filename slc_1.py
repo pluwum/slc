@@ -16,7 +16,7 @@ def makeBreakfast(type_of_breakfast,ingredients = []):
 		print("Serve the "+type_of_breakfast+" with "+",".join(ingredients))
 		breakfast = "------Serve the {} with {} ------".format(type_of_breakfast,",".join(ingredients))
 	else:
-		print("Serve the "+type_of_breakfast+" with "+",".join(ingredients))
+		print("Serve the "+type_of_breakfast)
 		breakfast = "------Serve the {} ------".format(type_of_breakfast)
 	
 	return breakfast
