@@ -12,14 +12,16 @@ def isPrime(number):
 #return list of primes from 0 to number
 def primes(number):
 	primes = []
-	
-	if number >= 0:
-		for x in range(2, number+1):
-			if(isPrime(x)):
-				primes.append(x)
-		return primes
+	if isinstance(number,int):
+		if number >= 0:
+			for x in range(2, number+1):
+				if(isPrime(x)):
+					primes.append(x)
+			return primes
+		else:
+			raise ValueError
 	else:
-		raise ValueError	
+		raise TypeError		
 
 #mic check 1..2..3
 #print (primes(20))
